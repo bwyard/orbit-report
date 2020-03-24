@@ -40,7 +40,9 @@ export class AppComponent {
        for(let searchArraylist of searchArray){
          let name = this.sourceList[i][searchArraylist].toLowerCase()
          if (name.indexOf(searchTerm) >= 0) {
+           if(!matchingSatellites.includes(this.sourceList[i])){
             matchingSatellites.push(this.sourceList[i]);
+          }
          }
        }
         // let name = this.sourceList[i].name.toLowerCase();

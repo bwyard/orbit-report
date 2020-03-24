@@ -8,10 +8,13 @@ import { Satellite } from '../satellite';
 })
 export class OrbitCountsComponent implements OnInit {
 @Input() satellites: Satellite[];
+  satTypesCount = ['Space Debris','Communication','Probe','Positioning','Space Station', 'Telescope']
   constructor() { }
 
   ngOnInit() {
   }
+
+
   countType(arrayList,satType){
     let total = 0
     for (let arrayIndex in arrayList){

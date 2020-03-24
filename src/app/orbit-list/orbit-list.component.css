@@ -15,9 +15,6 @@ table {
   min-width: 300px;
   background: #dad8d8;
 }
-tr:nth-child(even){
-  background-color: green;
-}
 
 .header-row {
     background: #34495E;
@@ -30,5 +27,8 @@ th, td {
     padding: 6px;
 }
 .tr-debris{
-  background: red;
+  background: red!important;
+}
+tr:nth-child(even){
+  background-color: green;
 }
